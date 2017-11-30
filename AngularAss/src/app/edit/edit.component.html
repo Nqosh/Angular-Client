@@ -1,0 +1,25 @@
+<table id="EditContents">
+  <tr>
+    <td><label id="lblName">First Name</label></td><td><input type="text" id="txtName" [(ngModel)]="FirstName"></td>
+  </tr>
+  <tr>
+    <td><label id="lblSurname">Surname</label></td><td><input type="text" [(ngModel)]="Surname"></td>
+  </tr>
+  <tr>
+    <td><label id="lblIdentityType">Identity Type</label></td>
+    <td id="tdPassport"><input type="text" [(ngModel)]="IdentityType"></td>
+  </tr>
+  <tr>
+    <td><label  id="lblID">ID Number</label></td>
+    <td><input type="text" [(ngModel)]="IdentityNumber"></td>
+  </tr>
+  <tr>
+    <td><label>Date of Birth</label></td>
+    <td><input type="text" [(ngModel)]="DOB"></td>
+  </tr>
+  <br/>
+  <tr>
+    <td></td><td><button (click)="SaveChanges()">Submit</button></td>
+  </tr>
+</table>
+
